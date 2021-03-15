@@ -3,21 +3,21 @@ import "./styles.css";
 
 const Users = ({ user }) => {
   return (
-    <div>
-      <ul className="user-list" key={user.id}>
-        <li>{user.id}</li>
-        <li>
+    <tbody>
+      <tr className="user-list" key={user.id}>
+        <td>{user.id}</td>
+        <td>
           <strong>Name: </strong> {user.name}
-        </li>
-        <li>
+        </td>
+        <td>
           <strong>Username: </strong> {user.username}
-        </li>
-        <li>
+        </td>
+        <td>
           <strong>Email: </strong>
           {user.email}
-        </li>
-      </ul>
-    </div>
+        </td>
+      </tr>
+    </tbody>
   );
 };
 
