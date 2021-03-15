@@ -1,0 +1,63 @@
+/* user styles */
+.user-list {
+  list-style: none;
+  display: flex;
+  padding: 0.2rem;
+}
+
+.user-list li {
+  list-style: none;
+  padding: 0.2rem;
+}
+
+/* pagination styles */
+.page-numbers {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  border-color: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.page-numbers li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.load-more-ellipsis {
+  border: 0px solid rgba(0, 0, 0, 0.2);
+}
+
+.page-numbers li.active {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-numbers li button {
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.page-numbers li button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-numbers li button:focus {
+  outline: none;
+}
+
+.load-more-button {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
