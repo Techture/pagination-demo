@@ -97,9 +97,7 @@ const Pagination = () => {
 
       {/* pagination */}
       <ul className="page-numbers">
-        <button className="load-more-button" onClick={handleLoadFirst}>
-          Load First
-        </button>
+        <button onClick={handleLoadFirst}>Load First</button>
         <li>
           <button
             onClick={handlePrevBtn}
@@ -120,7 +118,6 @@ const Pagination = () => {
           </button>
         </li>
         <button
-          className="load-more-button"
           onClick={handleLoadMore}
           disabled={currentPage === pages[pages.length - 1] ? true : false}
         >
