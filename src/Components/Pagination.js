@@ -49,34 +49,6 @@ const Pagination = () => {
     }
   };
 
-  // ellipsis increment button
-  let pageIncrementBtn = null;
-  if (pages.length > maxPageNumberLimit) {
-    pageIncrementBtn = (
-      <li
-        className="load-more-ellipsis"
-        onClick={handleNextBtn}
-        disabled={currentPage === pages[pages.length - 1] ? true : false}
-      >
-        &hellip;
-      </li>
-    );
-  }
-
-  // ellipsis decrement button
-  let pageDecrementBtn = null;
-  if (pages.length > maxPageNumberLimit) {
-    pageDecrementBtn = (
-      <li
-        className="load-more-ellipsis"
-        onClick={handlePrevBtn}
-        disabled={currentPage === pages[0] ? true : false}
-      >
-        &hellip;
-      </li>
-    );
-  }
-
   // render page numbers
   const renderPageNumbers = pages.map((number) => {
     if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
@@ -99,7 +71,6 @@ const Pagination = () => {
   const handleLoadFirst = () => {
     setUsersPerPage(3);
     setCurrentPage(pages[0]);
-    // renderPageNumbers;
   };
 
   // handle load more page
@@ -138,9 +109,7 @@ const Pagination = () => {
           </button>
         </li>
 
-        {pageDecrementBtn}
         {renderPageNumbers}
-        {pageIncrementBtn}
 
         <li>
           <button
