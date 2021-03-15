@@ -6,4 +6,3 @@ TODO:
 
 - add propTypes
 - deploy with Netlify
-# pagination-demo
