@@ -1,15 +1,11 @@
 import React from "react";
 
 const Table = ({ users, loading }) => {
-  console.log("User Data >>", users);
-
   if (loading) {
     return <h2>Loading...</h2>;
   }
 
   const renderTableData = () => {
-    console.log("table data");
-
     return users.map((user, idx) => (
       <tr key={idx}>
         <td>{user.id}</td>
