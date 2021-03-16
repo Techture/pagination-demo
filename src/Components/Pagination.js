@@ -93,7 +93,6 @@ const Pagination = () => {
   return (
     <div className="pagination-wrapper">
       {/* user data */}
-      {/* <UserList users={currentUsers} loading={loading} /> */}
       <Table users={currentUsers} loading={loading} />
 
       {/* pagination */}
